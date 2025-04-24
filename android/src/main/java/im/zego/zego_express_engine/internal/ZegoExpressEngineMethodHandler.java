@@ -284,9 +284,6 @@ public class ZegoExpressEngineMethodHandler {
         if (binding != null) {
             application = (Application) binding.getApplicationContext();
             textureRegistry = binding.getTextureRegistry();
-        } else {
-            application = (Application) reg.context();
-            textureRegistry = reg.textures();
         }
 
         pluginBinding = binding;
@@ -333,9 +330,6 @@ public class ZegoExpressEngineMethodHandler {
         if (binding != null) {
             application = (Application) binding.getApplicationContext();
             textureRegistry = binding.getTextureRegistry();
-        } else {
-            application = (Application) reg.context();
-            textureRegistry = reg.textures();
         }
 
         pluginBinding = binding;
